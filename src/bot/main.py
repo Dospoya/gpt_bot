@@ -17,10 +17,6 @@ async def main() -> None:
     await set_commands(bot)
     dp["dialog_service"] = dialog_service
     await dp.start_polling(bot)
-    # try:
-    #     await dp.start_polling(bot)
-    # finally:
-    #     await bot.session.close()
 
 
 if __name__ == "__main__":
